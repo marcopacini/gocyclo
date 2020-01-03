@@ -1,3 +1,17 @@
+### Why this fork?
+
+Gocyclo unfortunately is not maintained by over five years and it doesn't exclude error checking from cyclomatic 
+complexity calculation. With this fork I added a quick check for each `if` statement. Every time the `if` will be like
+following the complexity won't be incremented:
+
+```go
+if err != nil {
+    //...
+}
+```
+
+---
+
 Gocyclo calculates cyclomatic complexities of functions in Go source code.
 
 The cyclomatic complexity of a function is calculated according to the
