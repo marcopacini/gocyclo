@@ -1,8 +1,7 @@
 ### Why this fork?
 
 Gocyclo unfortunately is not maintained by over five years and it doesn't exclude error checking from cyclomatic 
-complexity calculation. With this fork I added a quick check for each `if` statement. Every time the `if` will be like
-following the complexity won't be incremented:
+complexity calculation. With this fork I added a quick check for each `if` statement. Every time the `if` will be like the one below, the complexity won't be incremented:
 
 ```go
 if err != nil {
