@@ -1,5 +1,7 @@
 ### Why this fork?
 
+**tl;dr** Gocycle doesn't increase complexity no more for error checking.
+
 Gocyclo unfortunately is not maintained by over five years and it doesn't exclude error checking from cyclomatic 
 complexity calculation. With this fork I added a quick check for each `if` statement. Every time the `if` will be like the one below, the complexity won't be incremented:
 
